@@ -1,0 +1,99 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: monospace;
+  background-color: #faf7f4;
+}
+
+h2,
+p,
+.boton,
+.formulario {
+  text-align: center;
+}
+
+input {
+  font-family: monospace;
+  border-color: #9b8db6;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: auto;
+}
+
+#mError {
+  color: #ff0000;
+}
+
+p {
+  font-size: 17px;
+}
+
+#mybutton {
+  padding: 10px 20px;
+  background-color: #6f4caf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+#mybutton:hover {
+  background-color: #45a049;
+}
+
+#mybutton:active {
+  background-color: #5a3e8e;
+}
+
+.boton {
+  padding: 10px;
+}
+.container {
+  padding: 17px;
+  width: 300px;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  border: 3px solid rgb(226, 213, 213);
+  border-radius: 10px;
+  padding: 17px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 15px #4c505169;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    top: 12%;
+  }
+  .login {
+    width: 200px;
+  }
+  .logo {
+    width: 30%;
+  }
+}
+
+@media (max-height: 563px) {
+  .container {
+    top: 15%;
+  }
+}

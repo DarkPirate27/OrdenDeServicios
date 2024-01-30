@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Orden de Servicio Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="estilosFormulario.css"
+    />
+    <link rel="shortcut icon" href="images/SDI.ico" />
+  </head>
+  <body>
+    <section class="home">
+      <div class="inFlex">
+        <h1>Orden de Servicio - Formulario</h1>
+        <form id="form">
+          <div class="element">
+            <label>Nombre del Archivo:</label>
+            <input
+              type="text"
+              placeholder="Nombre del Archivo"
+              id="nombre_archivo"
+              onkeypress="return (event.charCode >= 48 && event.charCode <= 122)"
+            />
+          </div>
+          <div class="element">
+            <label>No. Incidente:</label>
+            <input
+              required
+              type="text"
+              placeholder="No. Incidente"
+              id="noInsidente"
+            />
+          </div>
+          <div class="element">
+            <label>Fecha:</label>
+            <input type="date" id="fecha" />
+          </div>
+
+          <h2>DATOS DEL CLIENTE</h2>
+
+          <div class="element">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Nombre del Cliente" id="nombre" />
+          </div>
+          <div class="element">
+            <label>No. Empleado:</label>
+            <input type="number" placeholder="No. Empleado" id="noEmpleado" />
+          </div>
+          <div class="element">
+            <label>Ubicacion:</label>
+            <select name="ubicacion" id="ubicacion">
+              <optgroup label="TORRE A">
+                <option value="TAPB">TAPB</option>
+                <option value="TA1">TA1</option>
+                <option value="TA2">TA2</option>
+                <option value="TA3">TA3</option>
+                <option value="TA4">TA4</option>
+                <option value="TA5">TA5</option>
+                <option value="TA6">TA6</option>
+                <option value="TA7">TA7</option>
+                <option value="TA8">TA8</option>
+              </optgroup>
+              <optgroup label="TORRE B">
+                <option value="TBB">TBPB</option>
+                <option value="TB1">TB1</option>
+                <option value="TB2">TB2</option>
+                <option value="TB3">TB3</option>
+                <option value="TB4">TB4</option>
+                <option value="TB5">TB5</option>
+              </optgroup>
+              <optgroup label="PRODUCCION">
+                <option value="PRB">PRPB</option>
+                <option value="PR1">PR1</option>
+                <option value="PR2">PR2</option>
+                <option value="PR3">PR3</option>
+                <option value="PR4">PR4</option>
+              </optgroup>
+              <optgroup label="EDIFICIO ROJO">
+                <option value="ERSOT">ERSOT</option>
+                <option value="ERBP">ERBP</option>
+                <option value="ER1">ER1</option>
+                <option value="ER2">ER2</option>
+                <option value="ER3">ER3</option>
+              </optgroup>
+              <optgroup label="PRESIDENCIA">
+                <option value="EPPB">EPPB</option>
+                <option value="EP1">EP1</option>
+                <option value="EP2">EP2</option>
+              </optgroup>
+              <optgroup label="CASITAS">
+                <option value="CAS">CAS</option>
+              </optgroup>
+              <optgroup label="ALMACEN GENERAL">
+                <option value="ALM">ALM</option>
+              </optgroup>
+              <optgroup label="VIDEOTECA">
+                <option value="VIDPB">VIDPB</option>
+                <option value="VID1">VID1</option>
+                <option value="VID2">VID2</option>
+              </optgroup>
+              <optgroup label="FOROS">
+                <option value="FORO 1">FORO 1</option>
+                <option value="FORO 2">FORO 2</option>
+                <option value="FORO 3">FORO 3</option>
+                <option value="FORO 4">FORO 4</option>
+                <option value="FORO 5">FORO 5</option>
+                <option value="FORO 6">FORO 6</option>
+              </optgroup>
+              <optgroup label="EDIFICIO GENERAL">
+                <option value="EGPB">EGPB</option>
+                <option value="EG1">EG1</option>
+              </optgroup>
+              <optgroup label="A QUIEN LE CORRESPONDA">
+                <option value="AQC1">AQC1</option>
+              </optgroup>
+              <optgroup label="HELIPUERTO">
+                <option value="HELI">HELI</option>
+              </optgroup>
+              <optgroup label="RED NACIONAL">
+                <option value="RN">RN</option>
+              </optgroup>
+              <optgroup label="VESTUARIO">
+                <option value="VES">VES</option>
+              </optgroup>
+              <optgroup label="ESTACIONAMIENTO">
+                <option value="EST">EST</option>
+              </optgroup>
+              <optgroup label="TOYOTA">
+                <option value="TOY">TOY</option>
+              </optgroup>
+              <optgroup label="MAQUILLAJE">
+                <option value="MAQ">MAQ</option>
+              </optgroup>
+              <optgroup label="AL EXTREMO">
+                <option value="ALX">ALX</option>
+              </optgroup>
+              <optgroup label="CONSULTORIO MEDICO">
+                <option value="MED">MED</option>
+              </optgroup>
+              <optgroup label="MERCADO GASTRONOMICO">
+                <option value="MG">MG</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="element">
+            <label>No. Contacto:</label>
+            <input type="text" placeholder="No. Contacto" id="noContacto" />
+          </div>
+          <div class="element">
+            <label>Unidad de Negocio:</label>
+            <input
+              type="text"
+              placeholder="Unidad de Negocio"
+              id="unidadDeNegocio"
+            />
+          </div>
+
+          <h2>DATOS DEL EQUIPO</h2>
+
+          <div class="element">
+            <label>Marca del Equipo:</label>
+            <select name="marca" id="marca">
+              <option value="Dell">Dell</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="Huawei">Huawei</option>
+              <option value="Apple">Apple</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Modelo:</label>
+            <input type="text" placeholder="Modelo" id="modelo" />
+          </div>
+          <div class="element">
+            <label>Placa:</label>
+            <input type="text" placeholder="Placa" id="placa" />
+          </div>
+          <div class="element">
+            <label>Dominio:</label>
+            <select name="dominio" id="dominio">
+              <option value="Azteca">Azteca</option>
+              <option value="Horusur">Horusur</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Aditamentos:</label>
+            <input type="text" placeholder="Aditamentos" id="aditamento" />
+          </div>
+          <div class="element">
+            <p>Problema Reportado por el Cliente:</p>
+            <textarea
+              name="problemaRPC"
+              id="problemaRPC"
+              cols="40"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <h2>TAREAS A REALIZAR</h2>
+          <div class="element">
+            <p>Respaldar (Unidad, Carpetas y Perfil):</p>
+            <textarea
+              name="repaldar"
+              id="repaldar"
+              cols="40"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="element">
+            <label>Tiene Sap:</label>
+            <select name="tieneSap" id="tieneSap">
+              <option value="tieneSap_si">Si</option>
+              <option value="tieneSap_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>One Drive Sincronizado:</label>
+            <select name="oneDrive" id="oneDrive">
+              <option value="oneDrive_si">Si</option>
+              <option value="oneDrive_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Permisos de Desarrollador:</label>
+            <select name="permisosDD" id="permisosDD">
+              <option value="permisosDD_si">Si</option>
+              <option value="permisosDD_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Impresora Personal:</label>
+            <select name="impresoraP" id="impresoraP">
+              <option value="impresoraP_si">Si</option>
+              <option value="impresoraP_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Teams:</label>
+            <select name="teams" id="teams">
+              <option value="teams_si">Si</option>
+              <option value="teams_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>VPN:</label>
+            <select name="vpn" id="vpn">
+              <option value="global">Global</option>
+              <option value="citrix">Citrix</option>
+              <option value="na">NA</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Permisos USB:</label>
+            <select name="permisosUSB" id="permisosUSB">
+              <option value="permisosUSB_si">Si</option>
+              <option value="permisosUSB_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Compartidos de Red:</label>
+            <select name="compartidosDR" id="compartidosDR">
+              <option value="compartidosDR_si">Si</option>
+              <option value="compartidosDR_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>PST Correo:</label>
+            <select name="pst" id="pst">
+              <option value="win">Windows</option>
+              <option value="mac">Mac</option>
+              <option value="na">NA</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Tipo de Licencia de Office:</label>
+            <select name="tipoLDO" id="tipoLDO">
+              <option value="e1">E1</option>
+              <option value="e3">E3</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Cifrado de Equipo:</label>
+            <select name="cifradoDE" id="cifradoDE">
+              <option value="cifradoDE_si">Si</option>
+              <option value="cifradoDE_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <label>Llave PGP:</label>
+            <select name="llavesPGP" id="llavesPGP">
+              <option value="llavesPGP_si">Si</option>
+              <option value="llavesPGP_no">No</option>
+            </select>
+          </div>
+          <div class="element">
+            <p>Software Adicional al Estandar:</p>
+            <textarea
+              name="softwareA"
+              id="softwareA"
+              cols="40"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="element">
+            <p>Condiciones Fisicas del Equipo:</p>
+            <textarea
+              name="condicionesFDE"
+              id="condicionesFDE"
+              cols="40"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="element">
+            <label>Nombre del Ingeniero:</label>
+            <input
+              type="text"
+              placeholder="Nombre del Ingeniero"
+              id="ingenieroNombre"
+            />
+          </div>
+          <div class="element">
+            <p>Firma del Ingeniero:</p>
+            <canvas id="ingernieroFirma"></canvas>
+            <br />
+            <button class="limpiar" id="limpiarIngeniero">Limpiar</button>
+            <p id="alertIngeniero" class="alertas"></p>
+          </div>
+          <div class="element">
+            <p>Firma de Check List Cliente:</p>
+            <canvas id="clienteFirma1"></canvas>
+            <br />
+            <button class="limpiar" id="limpiarCheckList">Limpiar</button>
+            <p id="alertCliente1" class="alertas"></p>
+          </div>
+          <div class="element">
+            <p>Firma de CONFIRMACION Cliente:</p>
+            <canvas id="clienteFirma2"></canvas>
+            <br />
+            <button class="limpiar" id="limpiarConfirmar">Limpiar</button>
+            <p id="alertCliente2" class="alertas"></p>
+          </div>
+          <h2>Nota: NO DEJES ESPACIOS EN BLANCO</h2>
+          <div class="botones">
+            <button id="guardar">GUARDAR</button>
+            <button id="pdf">Convertir en PDF</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script type="module" src="jspdf.min.js"></script>
+    <script
+      type="module"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"
+    ></script>
+    <script type="module" src="formulario.js"></script>
+  </body>
+</html>

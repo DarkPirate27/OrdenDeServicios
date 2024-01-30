@@ -1,0 +1,177 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: monospace;
+}
+
+body {
+  background-color: #faf7f4;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inFlex {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.inFlex:first-child {
+  flex: 2;
+  padding: 25px;
+  background-color: rgb(226, 213, 213);
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+#agregarFormulario {
+  padding: 8px 15px;
+  background-color: #6f4caf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+#agregarFormulario:hover {
+  background-color: #45a049;
+}
+
+#agregarFormulario:active {
+  background-color: #beabdc;
+}
+
+.botonEditar {
+  padding: 8px 15px;
+  margin-left: 8px;
+  background-color: #3facb6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.botonEditar:hover {
+  background-color: #43e94b;
+}
+
+.botonEditar:active {
+  background-color: #beabdc;
+}
+
+.botonEliminar {
+  padding: 8px 15px;
+  margin-left: 8px;
+  background-color: #f2390a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.botonEliminar:hover {
+  background-color: #ebb249;
+}
+
+.botonEliminar:active {
+  background-color: #f2a4a4;
+}
+
+#nomFormulario {
+  padding: 10px 5px;
+  border-color: #5a3e8e;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 500px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.Formulario {
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  margin: 10px;
+  text-align: center;
+}
+
+#mas {
+  font-size: 27px;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  padding: 10px;
+  display: block;
+}
+
+li {
+  list-style: none;
+  list-style-position: inside;
+  background-color: #766594;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: stretch;
+  justify-content: left;
+}
+
+li p {
+  display: flex;
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  min-width: 13px;
+  min-height: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 450px) {
+  p,
+  .botonEditar,
+  .botonEliminar,
+  #nomFormulario,
+  #mensaje1 {
+    font-size: 15px;
+  }
+
+  #mas {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .botonEditar,
+  .botonEliminar {
+    padding: 8px 10px;
+    margin-left: 4px;
+  }
+}
